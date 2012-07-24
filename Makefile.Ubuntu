@@ -1,0 +1,18 @@
+BUILD_TYPE := debug
+PLATFORM   := x86
+TARGET_TYPE := DESKTOP
+LUNA_STAGING := $(HOME)/webos/staging
+
+TEST_CFLAGS := `pkg-config --cflags cppunit`
+TEST_LIBS := `pkg-config --libs cppunit`
+
+include Makefile.inc
+
+install: all
+	@mkdir -p $(LUNA_STAGING)/lib
+	@mkdir -p $(LUNA_STAGING)/include/sysmgr-ipc
+	install -m 0755 -d $(LUNA_STAGING)/lib
+	install -m 0755 $(TARGET_SO) $(LUNA_STAGING)/lib
+	install -m 0644 ipc/*.h $(LUNA_STAGING)/include/sysmgr-ipc
+	install -m 0644 base/*.h $(LUNA_STAGING)/include/sysmgr-ipc
+
