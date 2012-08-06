@@ -17,9 +17,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-LunaSysMgrIpc
-=============
-
+Summary
+========
 This is the repository for LunaSysMgrIpc, the webOS IPC library used by luna-sysmgr.
 
 How to Build on Linux
