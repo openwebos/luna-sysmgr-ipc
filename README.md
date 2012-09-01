@@ -5,8 +5,26 @@ This is the repository for LunaSysMgrIpc, the webOS IPC library used by luna-sys
 How to Build on Linux
 =====================
 
-This is built when you build luna-sysmgr:  
-       openwebos/luna-sysmgr
+### Building the latest "stable" version
+
+Clone the repository openwebos/build-desktop and follow the instructions in the README file.
+
+### Building your local clone
+
+First follow the directions to build the latest "stable" version.
+
+To build your local clone of luna-sysmgr-ipc instead of the "stable" version installed with the build-webos-desktop script:  
+* Open the build-webos-desktop.sh script with a text editor
+* Locate the function build_luna-sysmgr-ipc
+* Change the line "cd $BASE/luna-sysmgr-ipc" to use the folder containing your clone, for example "cd ~/github/luna-sysmgr-ipc"
+* Close the text editor
+* Remove the file ~/luna-desktop-binaries/luna-sysmgr-ipc/luna-desktop-build.stamp
+* Start the build
+
+Cautions:
+* When you re-clone openwebos/build-desktop, you'll have to overwrite your changes and reapply them
+* Components often advance in parallel with each other, so be prepared to keep your cloned repositories updated
+* Fetch and rebase frequently
 
 # Copyright and License Information
 
