@@ -48,7 +48,7 @@ add_library(LunaSysMgrIpc SHARED ${SOURCE_FILES})
 target_link_libraries(LunaSysMgrIpc ${GLIB2_LDFLAGS} ${GTHREAD2_LDFLAGS})
 
 # -- install include files
-install(DIRECTORY src/base src/ipc DESTINATION ${WEBOS_INSTALL_INCLUDEDIR}/sysmgr-ipc 
+install(DIRECTORY src/base/ src/ipc/ DESTINATION ${WEBOS_INSTALL_INCLUDEDIR}/sysmgr-ipc 
 	FILES_MATCHING PATTERN "*.h"
 )
 
