@@ -49,8 +49,8 @@ endif
 FLAGS_OPT += -fPIC -fvisibility=hidden
 
 INCLUDES := $(INCLUDES) \
-	-I./base \
-	-I./ipc \
+	-I./src/base \
+	-I./src/ipc \
 	`pkg-config --cflags glib-2.0 gthread-2.0`
 
 LIBS := $(LIBS) \
@@ -69,7 +69,7 @@ setup:
 
 tests: $(TEST_EXES)
 
-vpath %.cpp ipc base tests
+vpath %.cpp src/ipc src/base tests
 
 $(TARGET_SO): $(TARGET_OBJS)
 	$(CXX) $(LOCAL_LFLAGS) -shared -Wl,--no-undefined -o $(TARGET_SO) $(TARGET_OBJS) $(LIBS)

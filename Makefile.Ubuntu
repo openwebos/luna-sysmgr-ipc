@@ -13,6 +13,6 @@ install: all
 	@mkdir -p $(LUNA_STAGING)/include/sysmgr-ipc
 	install -m 0755 -d $(LUNA_STAGING)/lib
 	install -m 0755 $(TARGET_SO) $(LUNA_STAGING)/lib
-	install -m 0644 ipc/*.h $(LUNA_STAGING)/include/sysmgr-ipc
-	install -m 0644 base/*.h $(LUNA_STAGING)/include/sysmgr-ipc
+	install -m 0644 src/ipc/*.h $(LUNA_STAGING)/include/sysmgr-ipc
+	install -m 0644 src/base/*.h $(LUNA_STAGING)/include/sysmgr-ipc
 
