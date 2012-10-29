@@ -17,7 +17,7 @@
 # LICENSE@@@
 
 libdir=@WEBOS_INSTALL_LIBDIR@
-includedir=@WEBOS_INSTALL_INCLUDEDIR@
+includedir=@WEBOS_INSTALL_INCLUDEDIR@/sysmgr-ipc
 
 Name: luna-sysmgr-ipc
 Description: @WEBOS_PROJECT_SUMMARY@
