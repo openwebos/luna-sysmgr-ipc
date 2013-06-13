@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// Copyright (c) 2009-2012 Hewlett-Packard Development Company, L.P.
+// Copyright (c) 2009-2013 LG Electronics, Inc.
 
 #ifndef IPC_IPC_MESSAGE_H__
 #define IPC_IPC_MESSAGE_H__
